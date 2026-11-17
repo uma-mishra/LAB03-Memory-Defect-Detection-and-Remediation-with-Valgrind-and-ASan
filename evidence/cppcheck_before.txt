@@ -1,0 +1,30 @@
+Checking dirty_code.c ...
+dirty_code.c:11:15: style: Condition 'marks>50' is always true [knownConditionTrueFalse]
+    if (marks > 50) {
+              ^
+dirty_code.c:9:17: note: Assignment 'marks=75', assigned value is 75
+    int marks = 75;
+                ^
+dirty_code.c:11:15: note: Condition 'marks>50' is always true
+    if (marks > 50) {
+              ^
+dirty_code.c:12:19: style: Condition 'marks<100' is always true [knownConditionTrueFalse]
+        if (marks < 100) {
+                  ^
+dirty_code.c:9:17: note: Assignment 'marks=75', assigned value is 75
+    int marks = 75;
+                ^
+dirty_code.c:12:19: note: Condition 'marks<100' is always true
+        if (marks < 100) {
+                  ^
+dirty_code.c:13:23: style: Condition 'marks==75' is always true [knownConditionTrueFalse]
+            if (marks == 75) {
+                      ^
+dirty_code.c:9:17: note: Assignment 'marks=75', assigned value is 75
+    int marks = 75;
+                ^
+dirty_code.c:13:23: note: Condition 'marks==75' is always true
+            if (marks == 75) {
+                      ^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

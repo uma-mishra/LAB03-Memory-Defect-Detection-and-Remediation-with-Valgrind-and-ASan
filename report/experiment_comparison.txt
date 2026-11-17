@@ -1,0 +1,45 @@
+LAB 3 - EXPERIMENT RESULTS
+
+EXPERIMENT 3: MEMORY ERROR DETECTION
+
+1. Uninitialized Variable
+Original: Detected by Valgrind.
+Fixed: 0 Valgrind errors.
+
+2. Memory Leak
+Original: 40 bytes definitely lost.
+Fixed: 0 bytes leaked.
+
+3. Double Free
+Original: Invalid free detected by Valgrind.
+Fixed: 0 Valgrind errors.
+
+AddressSanitizer:
+- Detected 40-byte memory leak.
+- Detected double-free error.
+- No uninitialized-variable detection.
+
+EXPERIMENT 4: CODE QUALITY ANALYSIS
+
+Original Code:
+- Nested unnecessary conditions.
+- Unsafe string handling.
+- Missing file pointer validation.
+- Missing file operation error checks.
+- Dead code.
+
+Refactored Code:
+- Removed unnecessary conditions and dead code.
+- Used const variables.
+- Added file opening validation.
+- Added file writing validation.
+- Added file closing validation.
+
+Cppcheck:
+- Original code: Multiple warnings.
+- Refactored code: Zero warnings.
+
+Compilation:
+- GCC compilation successful.
+- No compiler warnings.
+- Program executed successfully.
